@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hoock Trucking - Quote</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="hoock.css">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Need something shipped? Let us give a quote on expert service.">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+</head>
+<body>
+        <header>
+            <div>
+                <h1>
+                    <a href="index.html"> <img src="hoocklogo2.png" alt="Hoock Trucking Logo"></a> 
+                </h1>
+    
+                </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="aboutus.html">About Us</a> </li>
+                <li><a href="drivers.html">Our Drivers</a> </li>
+                <li><a href="quote.html">Quote</a> </li>
+                <li><a href="contactus.html">Contact Us</a> </li>
+                <li><a href="tracking.html">Tracking</a></li>
+            </ul>
+        </nav>
+
+
+        
+<div id="wrapper">
+        <main>
+            <h2>
+                <b> 
+                    Quote Information
+                </b>
+            </h2>
+            <form method="post" action="thankyou.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                <label for="busName">
+                    *Business Name
+                </label>
+                <input type="text" name="BName" id="busName" required><br>
+                <label for="myFName"> 
+                    *Contact First Name:
+                </label>
+                <input type="text" name="FName" id="myFName" required><br>
+                <label for="myLName">
+                    *Contact Last Name:
+                </label>
+                <input type="text" name="LName" id="myLName" required><br>
+                
+                <label for="myEmail">
+                    *Contact E-mail:
+                </label>
+                <input type="email" name="Email" id="myEmail" required><br>
+                <label for="myPhone">
+                    *Contact Phone:
+                </label>
+                <input type="tel" name="Phone" id="myPhone" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Load Information</legend>
+                <div>
+                <label for="myDate">
+                    Shipping Date:
+                </label><br>
+                <input type="date" name="Date" id="myDate">
+                </div>                &nbsp;
+                <div>
+                <label for="loadWeight">
+                    Estimated Load Weight:
+                </label> <br>
+                <input type="number" name="Weight" id="loadWeight" min="1000" max="48000" step="1000">
+                </div>                  &nbsp;
+                <fieldset>
+                    <Legend>Type of Trailer</Legend>
+                    <div>
+                        <input type="radio" name="Trailer" id="dryVan" value="Van">
+                        <label for="dryVan">Dry Van</label>
+                        <br>
+                        <input type="radio" name="Trailer" id="flatBed" value="Flatbed">
+                        <label for="flatBed">Flatbed Trailer</label>    
+                        <br>
+                        <input type="radio" name="Trailer" id="fridgeVan" value="Refrigerated">
+                        <label for="fridgeVan">Refrigerated Van</label>   
+                        <br>
+                    </div>
+                </fieldset> 
+                &nbsp;
+                <div>
+                    <label for="hazMat">
+                        Hazardous Materials:
+                    </label> 
+                    <br>
+                    <input type="checkbox" name="Hazmat" id="hazMat">
+
+                </div>                &nbsp;
+                </fieldset>
+                <div>
+                    <label for="myComments">
+                        *Description of Load Type:
+                    </label>
+                    <br>
+                    <textarea name="Comments" id="myComments" cols="40" rows="4"  wrap="hard" required>
+                    </textarea>
+                </div>
+                <div>
+                    <input type="submit" id="mySubmit" value="Submit">
+                </div>
+            </form>
+
+        </main>
+</div>
+<div id="container">
+    
+</div>
+    <footer>
+            Copyright &copy; 2021 Hoock Trucking, LLC
+            <br>
+            <a href="mailto:william@hoock.com">william@hoocktrucking.com</a><br>
+            Background Image Courtesy of <a href="https://unsplash.com/@robsonhmorgan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robson Hatsukami Morgan</a> on <a href="https://unsplash.com/s/photos/truck?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </footer>
+
+</body>
+</html>

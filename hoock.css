@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    min-height: 1013px;
+    background-image: url(home.jpg);
+    background-color:  #242527; 
+    background-size:200% 100%;
+    background-repeat: no-repeat;
+    font-family: verdana, arial, sans-serif; 
+    margin: 0;
+}
+#wrapper {
+    background-color:  #2E2E2E; 
+ }
+section {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+header{
+    background-color: #2E2E2E;
+    color:#a5c67e; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1em;
+}
+header a{
+    text-decoration:solid;
+}
+header a:visited{
+    color: #A5C67E;
+}
+header a:link{
+    color: #A5C67E;
+}
+header a:hover{
+    color: #99df72;
+    font-weight: bolder;
+}
+h1{
+    text-align: center;
+    font-size: 1.5em;
+}
+nav{
+    text-align: center;
+    background-color: #242527;
+    font-size: 1.2em;
+    color: #A5C67E;
+}
+nav a{
+    text-decoration: none;}
+nav a:link{
+    color:#A5C67E;
+}
+nav a:visited{
+    color: #B1CDB1;
+}
+nav a:hover{
+    color:#99df72;
+    font-weight: bolder;
+}
+nav ul {
+    flex-direction: column;
+    list-style: none;
+    margin:0;
+    padding-left: 0em;
+}
+nav li{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+main{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    color: #ffffff;
+}
+main a:link{   
+     color:#A5C67E;
+}
+main a:visited{
+    color: #a5c67e;
+}
+h2{
+    color:#A5C67E; 
+    font-family: Georgia, serif;
+}
+h3{ 
+    font-family: Arial, Helvetica, sans-serif;
+    color:#a5c67e
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+figure{
+    font-size: 8pt;
+}
+dt{
+    color:forestgreen; 
+    font-weight: bold;
+}
+#homehero{
+    height: 1280px;
+    margin:auto;
+    width:80%;
+    background-image: url(home.jpg);
+    background-size:200% 100%;
+    background-repeat: no-repeat;
+}
+.hoock{
+    color:#a5c67e; 
+    font-size: 1.2em;
+}
+footer{
+
+    color: #ffffff;
+    font-size: 0.70em; 
+    font-style:italic; 
+    text-align: center;
+    padding: 1em;
+}
+footer a:link{
+    color:#a5c67e;
+}
+#mobile{
+    display: inline;
+}
+#desktop{
+    display: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 70%;
+}
+input, textarea{
+    margin-bottom: .5em;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    margin: 8px;
+    text-align: center;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+  }
+  
+  .title {
+    color: #a5c67e;
+    text-align: center;
+  }
+  table{
+    border: 1px solid #a5c67e;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    background-color: #242527;
+}
+td, th{
+    padding:5px;
+    border:1px solid #a5c67e
+    ;
+}
+th{
+    color: #a5c67e;
+}
+td{
+    align-content: center;
+    text-align: center;
+}
+.text{
+    text-align: left;
+}
+
+
+
+@media (min-width: 600px){
+    h1{
+        font-size: 2em;
+        letter-spacing: .25em;
+    }
+    nav{ 
+        height: 50px;
+    }
+    nav ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
+    nav li{
+        width: 12em;
+        border-bottom: none;
+    }
+    section{
+        padding-left:2em;
+        padding-right: 2em;
+    }
+    #flow {
+        display: flex;
+        flex-flow: row;
+    }
+    #mobile{ 
+        display: none;
+    }
+    #desktop{
+        display: inline;
+    }
+    main{
+        min-height: 50%;
+    }
+    #container{
+        min-height: 400px;
+    }
+    body{
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center center;
+        background-attachment:fixed; 
+    }
+}
+@media(min-width: 1024px){
+
+    nav ul {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #wrapper {
+        max-width: 1250px;
+        margin:auto;
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
